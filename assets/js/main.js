@@ -54,14 +54,14 @@ let swiperProjects = new Swiper(".projects__container", {
 // Initialize Firebase
 
 const firebaseConfig = {
-  apiKey: process.env.apiKey,
-  authDomain: process.env.authDomain,
-  databaseURL: process.env.databaseURL,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-  measurementId: process.env.measurementId,
+  apiKey: process.env.APKEY,
+  authDomain: process.env.AUTH,
+  databaseURL: process.env.DB,
+  projectId: process.env.PID,
+  storageBucket: process.env.STRGE,
+  messagingSenderId: process.env.MSID,
+  appId: process.env.APPID,
+  measurementId: process.env.MEASID,
 };
 
 firebase.initializeApp(firebaseConfig);
