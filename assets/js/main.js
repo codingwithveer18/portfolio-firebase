@@ -54,14 +54,14 @@ let swiperProjects = new Swiper(".projects__container", {
 // Initialize Firebase
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAko3j0NWqjuYL2vA70-OnltAilS0QQjYc",
-  authDomain: "midyear-gist-401516.firebaseapp.com",
-  databaseURL: "https://midyear-gist-401516-default-rtdb.firebaseio.com",
-  projectId: "midyear-gist-401516",
-  storageBucket: "midyear-gist-401516.appspot.com",
-  messagingSenderId: "338363698013",
-  appId: "1:338363698013:web:a37c729a9ef977b184f6b4",
-  measurementId: "G-XPENJEE6LX",
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 firebase.initializeApp(firebaseConfig);
