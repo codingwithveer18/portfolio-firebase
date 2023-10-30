@@ -38,7 +38,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="ri-home-3-line"></i> Home
               </a>
             </li>
@@ -71,7 +71,7 @@
 
         <div class="nav__buttons">
           <!-- Theme change -->
-          <!-- <i class="ri-contrast-2-line change-theme" id="theme-button"></i> -->
+          <i class="ri-contrast-2-line change-theme" id="theme-button"></i>
           <!-- toggle button -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
@@ -293,14 +293,16 @@
               <!--==================== PROJECT 1 =================-->
               <div class="projects__content swiper-slide">
                 <img
-                  src="assets/img/project1.jpg"
+                  src="assets/img/project1.png"
                   alt="projects image"
                   class="projects__img"
                 />
                 <div>
                   <span class="projects__subtitle">Web</span>
-                  <h1 class="projects__title">Event Creator</h1>
-                  <a href="#" class="projects__button"
+                  <h1 class="projects__title">Environmental Solution</h1>
+                  <a
+                    href="https://enviromentsolutions.netlify.app/"
+                    class="projects__button"
                     >View Demo
                     <i class="ri-arrow-right-line"></i>
                   </a>
@@ -309,14 +311,16 @@
               <!--==================== PROJECT 2 =================-->
               <div class="projects__content swiper-slide">
                 <img
-                  src="assets/img/project2.jpg"
+                  src="assets/img/project2.png"
                   alt="projects image"
                   class="projects__img"
                 />
                 <div>
                   <span class="projects__subtitle"> Web</span>
                   <h1 class="projects__title">Soulbound Confession</h1>
-                  <a href="#" class="projects__button"
+                  <a
+                    href="https://soulboundconfessions.netlify.app/"
+                    class="projects__button"
                     >View Demo
                     <i class="ri-arrow-right-line"></i>
                   </a>
@@ -325,14 +329,32 @@
               <!--==================== PROJECT 3 =================-->
               <div class="projects__content swiper-slide">
                 <img
-                  src="assets/img/project3.jpg"
+                  src="assets/img/project3.png"
                   alt="projects image"
                   class="projects__img"
                 />
                 <div>
                   <span class="projects__subtitle">Web</span>
                   <h1 class="projects__title">Country Guide</h1>
-                  <a href="#" class="projects__button"
+                  <a
+                    href="https://forcountryguide.netlify.app/"
+                    class="projects__button"
+                    >View Demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+              <!--==================== PROJECT 4 =================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="assets/img/project4.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle">Web</span>
+                  <h1 class="projects__title">Kolify</h1>
+                  <a href="https://kolify.netlify.app/" class="projects__button"
                     >View Demo
                     <i class="ri-arrow-right-line"></i>
                   </a>
@@ -350,34 +372,11 @@
         </div>
       </section>
 
-      <!-- ==================== TESTIMONIAL ====================
-      <section class="testimonial section"></section> -->
-
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in Touch</span>
         <div class="contact__container container grid section__border">
-          <div class="contact__content">
-            <h3 class="contact__title">
-              <i class="ri-wechat-line">Talk to me</i>
-            </h3>
-            <div class="contact__info">
-              <div class="contact__data">
-                <span class="contact__data-title">Email :</span>
-                <span class="contact__data-info">abc@gmail.com</span>
-              </div>
-              <!-- <div class="contact__data">
-                <a
-                  href="https://api.whatsapp.com/send?phone=917428772414&text=Hello, How are you!"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  <i class="ri-arrow-right-line"></i> Write me on WhasApp
-                </a>
-              </div> -->
-            </div>
-          </div>
           <div class="contact__content">
             <h3 class="contact__title">
               <i class="ri-send-plane-line"></i> Send your Query
@@ -427,10 +426,51 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Veer Yadav</h1>
+        <p>Frontend Developer</p>
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/veer-yadav2022"
+            class="footer__social-link"
+            target="_blank"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+          <a
+            href="https://github.com/codingwithveer18"
+            class="footer__social-link"
+            target="_blank"
+            ><i class="ri-github-line"></i
+          ></a>
+          <a
+            href="https://www.cloudskillsboost.google/public_profiles/1ac66423-689a-49ac-b297-693f653d38c6"
+            class="footer__social-link"
+            target="_blank"
+            ><i class="ri-cloud-line"></i
+          ></a>
+        </ul>
+        <span class="footer__copy">
+          &#169; Copyright Veer Yadav. All rights reserved
+        </span>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
